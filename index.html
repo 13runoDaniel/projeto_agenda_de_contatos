@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons/agenda.ico">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined&family=PT+Serif:ital@1&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/phone-book.png" alt="Agenda">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <h2>Insira abaixo os seus Contatos</h2>
+        <form id="form-contato">
+            <input type="text" id="nome-contato" maxlength="33" placeholder="Nome do contato:" required />
+            <div class="acrescentar-numero">
+                <input type="tel" id="numero-contato" minlength="10" maxlength="11" placeholder="Tel:" required />
+                <button>Adicionar</button>
+            </div>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="total-contato">Total de contatos</td>
+                    <td id="contar-contato">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
